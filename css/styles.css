@@ -43,3 +43,110 @@ a {
   justify-content: center;
   padding: 2rem;
 }
+
+/***************
+ * POST HEADER * 
+ ***************/
+
+.post {
+  background: var(--white);
+  width: 100%;
+  max-width: 50rem;
+  padding-bottom: 5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.1rem 0.2rem var(--box-shadow);
+}
+
+.post__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem 1.6rem 0 1.6rem;
+}
+
+/* Header left */
+.header__left {
+  flex: 1;
+}
+
+.author__name:hover,
+.post__date:hover {
+  text-decoration: underline;
+}
+
+.author__verified,
+.post__privacy,
+.options__icon {
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-image: url(../images/icons-list-1.png);
+  background-size: 7.1rem 43.2rem;
+  background-repeat: no-repeat;
+  background-position: -1.7rem -38.6rem;
+}
+
+.author__name {
+  margin-right: 0.2rem;
+}
+
+.post__author-pic {
+  float: left;
+  width: 4rem;
+  height: 4rem;
+  margin-right: 0.8rem;
+  border-radius: 50%;
+  box-shadow: 0 0.1rem 0.2rem var(--box-shadow);
+  transition: filter 0.2s ease;
+}
+
+.post__author-pic:hover {
+  filter: brightness(0.95);
+}
+
+.post__author {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--black2);
+}
+
+.post__date {
+  display: block;
+  float: left;
+  font-size: 1.3rem;
+  color: var(--black1);
+}
+
+/* Dot between post author and post date */
+.post__date-privacy-separator {
+  position: relative;
+  bottom: 0.1rem;
+}
+
+.post__privacy {
+  background-image: url(../images/icons-list-2.png);
+  background-size: 2.6rem 89.4rem;
+  background-position: 0 -78.2rem;
+  opacity: 0.6;
+}
+
+/* Header right */
+.post__options {
+  padding: 1rem;
+  border-radius: 50%;
+  line-height: 50%;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.post__options:hover {
+  background: var(--hover-shadow);
+}
+
+.options__icon {
+  height: 2rem;
+  width: 2rem;
+  position: relative;
+  background-size: 7.4rem 43rem;
+  background-position: -2.2rem -24rem;
+  opacity: 0.6;
+}
